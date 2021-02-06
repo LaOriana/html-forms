@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        Order a Melongram
+        <title>Order a Melongram</title>
     </head>
 
     <body>
@@ -33,26 +33,58 @@
                 <td>Honeydew</td> 
                 <td>$1,750,00.00</td>
             </tr>
-        </table>    
-Order Form
+        </table> 
+        
+        <h2>Order Form</h2>
 
-Your name
+        <form>
+            <label>Your name</label>
+            <input type="text" name="username">
+        </form>
 
-Who are we sending this to?
+        <form>    
+            <label>Who are we sending this to?</label>
+            <input type="text" name="recipient">
+        </form>
 
-Choose a melon
-Watermleon
-Canteloupe
-Honeydew
+        <form>
+            Choose a melon
 
-When should we deliver?
-Morning
-Evening
-Any time
+            <select name="melon">
+                <option value="watermelon">Watermelon</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="honeydew">Honeydew</option>
+            </select>
+        </form>
 
-Enter your message:
+        <form>
+            When should we deliver?
 
-Subscribe to our newsletter
-Yes
+            <input type="radio" name="time" value="am" >
+            <label></label>Morning</label>
+
+            <input type="radio" name="time" value="pm">
+            <label>Evening</label>
+            
+            <input type="radio" name="time" value="any">
+            <label>Any time</label>
+        </form>
+
+        <form>
+            Enter your message
+            
+            <textarea name="message"></textarea>
+        </form>
+
+        <form>
+            Subscribe to our newsletter
+            
+            <input type="checkbox" name="subscribe" value="yes">
+            <label>Yes</label>
+        </form>
+
+        <form>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
